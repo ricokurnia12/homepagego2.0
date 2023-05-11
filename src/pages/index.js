@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import Heroimage from '../assets/heroimage.png';
+import Heroimage from '../assets/Gif-Website-480.gif';
 import DiskonSlide from '../components/diskonslider/Slider';
+import HeroSlide from '../components/imageslider/Slider';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { MdLocationOn } from 'react-icons/md';
 import { AiFillCrown } from 'react-icons/ai';
@@ -13,13 +14,18 @@ export default function Home() {
   return (
     <div className="font-Rubik">
       {/* Hero Section */}
-      <header className="h-screen relative px-4 bg-[url('../assets/bghero.png')] bg-cover bg-no-repeat">
-        <div className="absolute w-screen bottom-0 left-0">
-          <Image src={BgHero2} className=" w-full" />
+      <header className="h-screen relative px-4 bg-[url('../assets/bghero.png')] bg-cover bg-no-repeat ">
+        <div className="absolute w-screen bottom-0 left-0 lg:-bottom-20">
+          <Image
+            alt="Ganesha Operation"
+            src={BgHero2}
+            className=" w-full"
+          />
         </div>
-        <div className="lg:absolute lg:top-40 flex flex-col justify-center items-center  md:flex-row-reverse">
+        <div className="lg:absolute lg:top-40 lg:px-16 flex flex-col justify-center items-center  md:flex-row-reverse">
           <div className={'w-1/2 md:w-11/12 lg:w-8/12 '}>
-            <Image className="lg:absolute -top-40" src={Heroimage} />
+            <HeroSlide />
+            {/* <DiskonSlide/> */}
           </div>
           <div className={'self-start text-white'}>
             <h1 className=" text-4xl font-bold text-white mb-2">
@@ -81,7 +87,9 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <HeroSlide />
       {/* <DiskonSlide /> */}
+      <Image src={Heroimage} />
     </div>
   );
 }
