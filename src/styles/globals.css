@@ -3,3 +3,6 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500&family=Rubik:wght@300;400;500;600;700;800&display=swap');
 
+.humberger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-black;
+}
