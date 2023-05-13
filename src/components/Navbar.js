@@ -9,7 +9,7 @@ const Navbar = () => {
       <header className=" w-full h-16 fixed rounded-full bg-white max-w-[2000px] flex items-center z-10 border lg:w-[90vw]">
         <div
           className={`container ${
-            navTogle ? 'h-60' : ''
+            navTogle ? 'h-0' : ''
           } md:h-20 lg:w-11/12`}
         >
           <div

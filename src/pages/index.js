@@ -24,7 +24,7 @@ export default function Home() {
             className=" w-full"
           />
         </div>
-        <div className="container m-auto relative">
+        <div className="container m-auto relative ">
           <div className=" w-full">
             <div className="absolute top-40 lg:top-40 lg:px-16 flex flex-col justify-center items-center  md:flex-row-reverse">
               <div
@@ -37,8 +37,8 @@ export default function Home() {
                   className=" absolute -top-60"
                 />
               </div>
-              <div className={'self-start text-white'}>
-                <h1 className=" text-4xl font-bold text-white mb-2 lg:text-5xl lg:mb-4">
+              <div className={'self-start text-white -ms-3'}>
+                <h1 className="  text-4xl font-bold text-white mb-2 lg:text-5xl lg:mb-4">
                   Ganesha Operation
                 </h1>
                 <p className={' font-light text-xl lg:text-2xl'}>
@@ -46,7 +46,7 @@ export default function Home() {
                   meluluskan 45.000 lebih siswa ke Kampus impianya.
                 </p>
                 <div className="grid grid-cols-3 grid-flow-col gap-0 mt-5 bg-white text-slate-900 justify-between rounded-lg p-2  max-w-lg lg:py-5  ">
-                  <div className="flex justify-center border-r-2 ">
+                  <div className="flex flex-col items-center justify-center border-r-2 ">
                     <div className=" me-2 self-center p-2 rounded-full bg-[#FEEBEB]">
                       <BsFillPersonFill className=" text-sm text-[#EB5757]" />
                     </div>
@@ -59,7 +59,7 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
-                  <div className=" flex justify-center border-r-2 ">
+                  <div className=" flex flex-col items-center justify-center border-r-2 ">
                     <div className=" me-2 self-center p-2 rounded-full bg-[#FEEBEB]">
                       <MdLocationOn className=" text-sm text-[#EB5757]" />
                     </div>
@@ -72,7 +72,7 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
-                  <div className=" justify-center flex">
+                  <div className="flex-col items-center justify-center flex">
                     <div className=" me-2 self-center p-2 rounded-full bg-[#FEEBEB]">
                       <AiFillCrown className=" text-sm text-[#EB5757]" />
                     </div>
